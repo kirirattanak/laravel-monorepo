@@ -2,9 +2,15 @@
 /apps/*/vendor/
 /apps/*/node_modules/
 /apps/*/public/hot
+/apps/*/public/build
+/apps/*/public/storage
+/apps/*/auth.json
+/apps/*/.phpunit.cache
 
 # Ignore logs, cache, and session files in all apps
 /apps/*/storage/
+/apps/*/storage/*.key
+/apps/*/storage/pail
 /apps/*/bootstrap/cache/
 
 # Ignore local Composer installs for the Core package if any were generated
@@ -14,3 +20,12 @@
 .idea/
 .vscode/
 .DS_Store
+*.log
+.env
+.env.backup
+.env.production
+.phpactor.json
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+Thumbs.db
